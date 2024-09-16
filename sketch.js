@@ -19,9 +19,9 @@ function imageReady() {
     image(messi, 0, 0, width, height);
 }
 
-function setup() {
+function setup(imagePath) {
     createCanvas(640, 640);
-    messi = createImg('Images/messi.jpg', imageReady);
+    messi = createImg('Images/man.jpg', imageReady);
     messi.hide();
     background(0);
 
