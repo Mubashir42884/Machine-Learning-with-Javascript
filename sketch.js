@@ -1,10 +1,10 @@
 let mobilenet;
-let messi;
+let loadImage;
 
 function modelReady() {
     console.log('Model is READY');
     // Use the classify method instead of predict
-    mobilenet.classify(messi, gotResults);
+    mobilenet.classify(loadImage, gotResults);
 }
 
 function gotResults(results, error) {
@@ -24,13 +24,13 @@ function gotResults(results, error) {
 }
 
 function imageReady() {
-    image(messi, 0, 0, width, height);
+    image(loadImage, 0, 0, width, height);
 }
 
 function setup(imagePath) {
     createCanvas(640, 640);
-    messi = createImg('Images/Man.jpg', imageReady);
-    messi.hide();
+    loadImage = createImg('Images/Parrot.jpg', imageReady);
+    loadImage.hide();
     background(0);
 
     // Load the MobileNet model using ml5's imageClassifier
