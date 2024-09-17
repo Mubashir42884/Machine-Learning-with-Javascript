@@ -2,16 +2,24 @@ let mobilenet;
 let messi;
 
 function modelReady() {
-    console.log('Model Is READY');
+    console.log('Model is READY');
     // Use the classify method instead of predict
     mobilenet.classify(messi, gotResults);
 }
 
-function gotResults(error, results) {
+function gotResults(results, error) {
     if(error){
-        console.error(error);
+        console.log(error);
     } else{
         console.log(results);
+        let classLabel = results[0].label;
+        let confidence = (results[0].confidence);
+        console.log("Class Name :\t"+classLabel);
+        console.log("Confidence :\t"+confidence);
+
+        // Display the results in HTML
+        createP("Predicted Class :\t"+classLabel);
+        createP("Confidence Score :\t"+round(confidence*100)+"%");
     }
 }
 
@@ -21,7 +29,7 @@ function imageReady() {
 
 function setup(imagePath) {
     createCanvas(640, 640);
-    messi = createImg('Images/man.jpg', imageReady);
+    messi = createImg('Images/Man.jpg', imageReady);
     messi.hide();
     background(0);
 
