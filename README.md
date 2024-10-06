@@ -1,5 +1,12 @@
 # Machine-Learning-with-Javascript
 This is my Javascript journey with Machine Learning using ML5.js and P5.js. I might add some projects and more advanced stuffs in future.
+<div align="center">
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Mubashir42884/Machine-Learning-with-Javascript)
+![GitHub watchers](https://img.shields.io/github/watchers/Mubashir42884/Machine-Learning-with-Javascript)
+![GitHub Repo stars](https://img.shields.io/github/stars/Mubashir42884/Machine-Learning-with-Javascript)
+
+</div>
 
 ----
 <div align='left'>
