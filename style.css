@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+    font-family: Quicksand;
+    font-weight: bolder;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.vdoBtn {
+    background-color: #4d0088;
+    color: white;
+}
+
+.playBtn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.playBtn:hover {
+    background-color: #99f79e;
+    color: black;
+    transform: scale(1.05);
+}
+
+.pauseBtn {
+    background-color: #e53935;
+    color: white;
+}
+
+.pauseBtn:hover {
+    background-color: #ffa39c;
+    color: black;
+    transform: scale(1.05);
+}
